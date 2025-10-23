@@ -642,13 +642,13 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/swappiness 60
 
     # Set kswapd affinity
-    write /sys/kernel/vendor_mm/kswapd_cpu_affinity ff
+    write /sys/kernel/vendor_mm/kswapd_cpu_affinity 0f
 
     # Set kcompactd affinity
-    write /sys/kernel/vendor_mm/kcompactd_cpu_affinity ff
+    write /sys/kernel/vendor_mm/kcompactd_cpu_affinity 0f
 
     # Adjust watermark level
-    write /proc/sys/vm/watermark_scale_factor 200
+    write /proc/sys/vm/watermark_scale_factor 0
 
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000

@@ -11,6 +11,7 @@ r_dir_file(hal_power_default, sysfs_vendor_mm)
 set_prop(hal_power_default, vendor_camera_prop)
 
 allow hal_power_default hal_thermal_service:service_manager find;
+allow hal_power_default proc_vendor_sched:file rw_file_perms;
 allow hal_power_default sysfs_camera:file rw_file_perms;
 allow hal_power_default sysfs_display:file rw_file_perms;
 allow hal_power_default sysfs_em_profile:file rw_file_perms;

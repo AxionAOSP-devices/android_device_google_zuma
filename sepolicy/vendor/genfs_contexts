@@ -242,6 +242,7 @@ genfscon sysfs /devices/platform/19471000.drmdecon/counters u:object_r:sysfs_dis
 genfscon sysfs /devices/platform/19471000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/19472000.drmdecon/counters u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1a000000.rio u:object_r:sysfs_edgetpu:s0
+genfscon sysfs /devices/platform/1f000000.mali/available_frequencies u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/capacity_headroom u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/cur_freq u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/dma_buf_gpu_mem u:object_r:sysfs_gpu:s0
@@ -249,9 +250,12 @@ genfscon sysfs /devices/platform/1f000000.mali/dvfs_period u:object_r:sysfs_gpu:
 genfscon sysfs /devices/platform/1f000000.mali/hint_min_freq u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/hint_power_on u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/kprcs u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/1f000000.mali/max_freq u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/1f000000.mali/min_freq u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/time_in_state u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/total_gpu_mem u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/uid_time_in_state u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/1f000000.mali/utilization u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/20c00000.callisto u:object_r:sysfs_gxp:s0
 genfscon sysfs /devices/platform/28000000.mali/hint_min_freq u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/28000000.mali/power_policy u:object_r:sysfs_gpu:s0
